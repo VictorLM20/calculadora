@@ -1,4 +1,6 @@
 def sumar(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        return "Error: Los operandos deben ser números"
     return a + b
 
 def restar(a, b):
