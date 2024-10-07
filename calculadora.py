@@ -14,7 +14,13 @@ def dividir(a, b):
         return "Error: División por cero"
     return a / b
 
+def calcular_potencia(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        return "Error: Los operandos deben ser números"
+    return a ** b 
+
 print(sumar(3, 5))
-print(restar(8, 2))
+print(restar(8, 2)) 
 print(multiplicar(4, 3))
-print(dividir(10, 2))
+print(dividir(10, 2))        
+print(calcular_potencia(2, 3))  
